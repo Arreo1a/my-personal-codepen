@@ -49,7 +49,7 @@
   /* Tamaño normal */
   /* Tamaño Maximo */
 
-  transition: 200ms;
+  transition: 200ms background-color;
 }
 
 .WCDrywallCrane > .craneSection > .ctaBtnContainer > .ctaBtn:hover {
