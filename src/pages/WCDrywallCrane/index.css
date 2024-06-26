@@ -48,6 +48,12 @@
   /* Tamaño minimo */
   /* Tamaño normal */
   /* Tamaño Maximo */
+
+  transition: 200ms;
+}
+
+.WCDrywallCrane > .craneSection > .ctaBtnContainer > .ctaBtn:hover {
+  background-color: #eb321d;
 }
 
 .WCDrywallCrane > .whyChooseUsSection {
