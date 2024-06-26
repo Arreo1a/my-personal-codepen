@@ -1,0 +1,199 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+.WCDrywallCrane {
+  display: flex;
+  padding: 40px 20px;
+}
+
+.WCDrywallCrane > .craneSection {
+  position: relative;
+
+  width: 40%;
+}
+
+.WCDrywallCrane > .craneSection > .craneImg {
+  width: 100%;
+}
+
+.WCDrywallCrane > .craneSection > .ctaBtnContainer {
+  position: absolute;
+  top: 0;
+
+  right: calc((13vw / 5.5));
+
+  height: 100%;
+
+  width: calc(13vw);
+}
+
+.WCDrywallCrane > .craneSection > .ctaBtnContainer > .ctaBtn {
+  position: absolute;
+  top: 54.9%;
+  left: 0;
+
+  width: inherit;
+  padding: 12px 0px;
+  border-radius: 10px;
+
+  background-color: #e15241;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: clamp(14px, calc(13vw / 9), 30px);
+  /* Tamaño minimo */
+  /* Tamaño normal */
+  /* Tamaño Maximo */
+}
+
+.WCDrywallCrane > .whyChooseUsSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.WCDrywallCrane > .whyChooseUsSection > .whyChooseUsSectionContainer {
+  padding-bottom: 10vw;
+}
+
+.WCDrywallCrane
+  > .whyChooseUsSection
+  > .whyChooseUsSectionContainer
+  > .sectionTitle {
+  text-align: end;
+  font-size: clamp(18px, 5vw, 50px);
+  font-weight: 500;
+}
+
+.WCDrywallCrane
+  > .whyChooseUsSection
+  > .whyChooseUsSectionContainer
+  > .infoContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: clamp(24px, 4vw, 80px);
+  margin-top: 30px;
+}
+
+.WCDrywallCrane
+  > .whyChooseUsSection
+  > .whyChooseUsSectionContainer
+  > .infoContainer
+  > .infoBlock
+  > .infoBlockNumber {
+  font-size: clamp(50px, 5vw, 80px);
+  font-weight: 500;
+}
+
+.WCDrywallCrane
+  > .whyChooseUsSection
+  > .whyChooseUsSectionContainer
+  > .infoContainer
+  > .infoBlock
+  > .infoBlockText {
+  text-wrap: nowrap;
+  font-weight: 500;
+  font-size: clamp(16px, 1vw, 22px);
+}
+
+@media only screen and (max-width: 800px) {
+  .WCDrywallCrane {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .WCDrywallCrane > .craneSection {
+    position: static;
+
+    width: 100%;
+  }
+
+  .WCDrywallCrane > .craneSection > .craneImg {
+    width: 100%;
+  }
+
+  .WCDrywallCrane > .craneSection > .ctaBtnContainer {
+    position: static;
+    display: flex;
+
+    width: 100%;
+
+    margin-top: 30px;
+  }
+
+  .WCDrywallCrane > .craneSection > .ctaBtnContainer > .ctaBtn {
+    position: static;
+
+    border-radius: 10px;
+
+    background-color: #e15241;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .WCDrywallCrane > .whyChooseUsSection {
+    width: 100%;
+  }
+
+  .WCDrywallCrane > .whyChooseUsSection > .whyChooseUsSectionContainer {
+    padding-bottom: 10vw;
+  }
+
+  .WCDrywallCrane
+    > .whyChooseUsSection
+    > .whyChooseUsSectionContainer
+    > .sectionTitle {
+    text-align: center;
+    font-size: clamp(18px, 9vw, 42px);
+  }
+
+  .WCDrywallCrane
+    > .whyChooseUsSection
+    > .whyChooseUsSectionContainer
+    > .infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(24px, 4vw, 80px);
+    margin-top: 30px;
+  }
+
+  .WCDrywallCrane
+    > .whyChooseUsSection
+    > .whyChooseUsSectionContainer
+    > .infoContainer
+    > .infoBlock {
+    text-align: center;
+  }
+
+  .WCDrywallCrane
+    > .whyChooseUsSection
+    > .whyChooseUsSectionContainer
+    > .infoContainer
+    > .infoBlock
+    > .infoBlockNumber {
+    font-size: clamp(60px, 10vw, 80px);
+    font-weight: 500;
+  }
+
+  .WCDrywallCrane
+    > .whyChooseUsSection
+    > .whyChooseUsSectionContainer
+    > .infoContainer
+    > .infoBlock
+    > .infoBlockText {
+    text-wrap: nowrap;
+    font-weight: 500;
+    font-size: clamp(16px, 1vw, 22px);
+  }
+}
