@@ -1,0 +1,31 @@
+.HectorPortfolio {
+  display: flex;
+  justify-content: center;
+
+  .contentContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    place-items: center;
+    gap: 20px;
+
+    width: 90%;
+    max-width: 1000px;
+
+    .contentBlock {
+      width: 100%;
+    }
+
+    .contentBlock:nth-child(1) {
+      background-color: lightblue;
+    }
+    .contentBlock:nth-child(2) {
+      background-color: rgb(230, 173, 173);
+    }
+    .contentBlock:nth-child(3) {
+      background-color: rgb(173, 230, 181);
+    }
+    .contentBlock:nth-child(4) {
+      background-color: rgb(230, 221, 173);
+    }
+  }
+}
