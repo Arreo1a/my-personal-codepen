@@ -4,7 +4,7 @@ import "./index.scss";
 import { Link } from "react-router-dom";
 
 function index() {
-  const [fullScreen, setFullScreen] = useState(false);
+  const [fullScreen, setFullScreen] = useState(true);
   const [transparentBtns, setTransparentBtns] = useState(false);
   const [theString, setTheString] = useState([]);
 
@@ -14,7 +14,7 @@ function index() {
       "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&=";
 
     let i = 0;
-    while (i < 10000) {
+    while (i < 100000) {
       myString += characters.charAt(
         Math.floor(Math.random() * characters.length)
       );
@@ -46,7 +46,7 @@ function index() {
         }`}
         onClick={() => setTransparentBtns(!transparentBtns)}
       >
-        {transparentBtns ? "Make btns transparent" : "Give btns color"}
+        {transparentBtns ? "Give btns color" : "Make btns transparent"}
       </div>
 
       <div className={`linksBox ${transparentBtns && "linksBox__transparent"}`}>

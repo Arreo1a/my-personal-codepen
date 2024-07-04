@@ -106,14 +106,13 @@
 
     transition: 200ms;
 
-    border-radius: 30px;
-
     overflow: hidden;
 
     &.myBoxFullScreen__false {
       width: 80%;
       max-width: 500px;
       aspect-ratio: 1;
+      border-radius: 30px;
     }
 
     &.myBoxFullScreen__true {
