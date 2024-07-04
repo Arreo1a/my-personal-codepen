@@ -4,9 +4,9 @@ import "./index.scss";
 import { Link } from "react-router-dom";
 
 function index() {
-  const [fullScreen, setFullScreen] = useState(true);
+  const [fullScreen, setFullScreen] = useState(false);
   const [transparentBtns, setTransparentBtns] = useState(false);
-  const [theString, setTheString] = useState([]);
+  const [theString, setTheString] = useState("");
 
   function getCharacters() {
     let myString = "";
@@ -22,11 +22,7 @@ function index() {
     }
 
     let splitText = myString.split();
-
-    // console.log(splitText);
     setTheString(splitText);
-
-    // console.log(theString);
   }
 
   return (
