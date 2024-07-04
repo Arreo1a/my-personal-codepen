@@ -26,6 +26,42 @@
     &:hover {
       background-color: rgba(226, 245, 228, 0.466);
     }
+
+    &.makeFullScreenBtn__transparent {
+      opacity: 0;
+      transition: 200ms;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .makeTransparentBtn {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    z-index: 100;
+
+    text-align: center;
+
+    padding: 20px 10px;
+    border-radius: 15px;
+
+    max-width: 80px;
+
+    background-color: rgba(255, 255, 255, 0.267);
+
+    &:hover {
+      background-color: rgba(226, 245, 228, 0.466);
+    }
+
+    &.makeTransparentBtn__transparent {
+      opacity: 0;
+      transition: 200ms;
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 
   .linksBox {
@@ -51,6 +87,14 @@
 
       &:hover {
         background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    &.linksBox__transparent {
+      opacity: 0;
+      transition: 200ms;
+      &:hover {
+        opacity: 1;
       }
     }
   }

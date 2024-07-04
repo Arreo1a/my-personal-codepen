@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 function index() {
   const [fullScreen, setFullScreen] = useState(false);
+  const [transparentBtns, setTransparentBtns] = useState(false);
   const [theString, setTheString] = useState([]);
 
   function getCharacters() {
@@ -31,13 +32,24 @@ function index() {
   return (
     <div className="hyperplexedHoverEffect">
       <div
-        className="makeFullScreenBtn"
+        className={`makeFullScreenBtn  ${
+          transparentBtns && "makeFullScreenBtn__transparent"
+        }`}
         onClick={() => setFullScreen(!fullScreen)}
       >
         {fullScreen ? "Contain" : "Cover"}
       </div>
 
-      <div className="linksBox">
+      <div
+        className={`makeTransparentBtn ${
+          transparentBtns && "makeTransparentBtn__transparent"
+        }`}
+        onClick={() => setTransparentBtns(!transparentBtns)}
+      >
+        {transparentBtns ? "Make btns transparent" : "Give btns color"}
+      </div>
+
+      <div className={`linksBox ${transparentBtns && "linksBox__transparent"}`}>
         <Link
           to="https://codepen.io/Hyperplexed/pen/VwqLQbo"
           target="_blank"
