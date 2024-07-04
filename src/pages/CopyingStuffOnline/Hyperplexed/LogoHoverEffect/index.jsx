@@ -34,7 +34,7 @@ function index() {
         className="makeFullScreenBtn"
         onClick={() => setFullScreen(!fullScreen)}
       >
-        Change
+        {fullScreen ? "Contain" : "Cover"}
       </div>
 
       <div className="linksBox">
