@@ -4,6 +4,9 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/_homePage/HomePage";
 import WCDrywallCrane from "./pages/WCDrywallCrane";
 import HectorPortfolio from "./pages/HectorPortfolio";
+import Slideshow from "./pages/Slideshow";
+
+import SnakeGame from "./pages/SnakeGame";
 
 import LogoHoverEffect from "./pages/CopyingStuffOnline/Hyperplexed/LogoHoverEffect";
 
@@ -18,8 +21,12 @@ function App() {
           element={<LogoHoverEffect />}
         />
 
+        <Route path="/snake-game" element={<SnakeGame />} />
+
+        <Route path="/slideshow" element={<Slideshow />} />
+
         <Route path="/wc/drywall-crane" element={<WCDrywallCrane />} />
-        <Route path="/showing-gtc-repeat" element={<HectorPortfolio />} />
+        <Route path="/wc/showing-gtc-repeat" element={<HectorPortfolio />} />
       </Routes>
     </Router>
   );
