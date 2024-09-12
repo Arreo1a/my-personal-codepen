@@ -9,6 +9,7 @@ import Slideshow from "./pages/Slideshow";
 import SnakeGame from "./pages/SnakeGame";
 
 import LogoHoverEffect from "./pages/CopyingStuffOnline/Hyperplexed/LogoHoverEffect";
+import MemoryGame from "./pages/MemoryGame";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         />
 
         <Route path="/snake-game" element={<SnakeGame />} />
+        <Route path="/memory-game" element={<MemoryGame />} />
 
         <Route path="/slideshow" element={<Slideshow />} />
 

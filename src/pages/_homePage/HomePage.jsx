@@ -14,6 +14,9 @@ function HomePage() {
         <li>
           <Link to={"/snake-game"}>(Not finished) Snake Game</Link>
         </li>
+        <li>
+          <Link to={"/memory-game"}>(Not finished) Memory Game</Link>
+        </li>
       </ul>
 
       <h2>Trying to make random stuff</h2>
